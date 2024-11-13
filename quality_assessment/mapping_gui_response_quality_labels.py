@@ -11,7 +11,7 @@ import ast, json
 from collections import defaultdict
 from prompts import Prompts
 from helpers import Helpers
-from bfs import BFS
+from path import Path
 from graph_visualization import GraphVisualzation
 
 class Mapping_GUI():
@@ -19,7 +19,7 @@ class Mapping_GUI():
 		self.writeResults = WriteResults()
 		self.prompts = Prompts()
 		self.helpers = Helpers()
-		self.bfs = BFS()
+		self.path = Path()
 		self.vis = GraphVisualzation()
 
 	def addEdge(self, u, v):
@@ -435,7 +435,7 @@ class Mapping_GUI():
 			label_count = 0
 			level = 0
 			
-			self.bfs.bfs(dfs_start_node, parent, self.graph)
+			self.path.path(dfs_start_node, parent, self.graph)
 			(s_rows, s_cols) = (index, len(s2r_sentence_list))
 			save_dp = [[[-1,-1,-1,[],[]] for _ in range(s_cols)] for _ in range(s_rows)]
 

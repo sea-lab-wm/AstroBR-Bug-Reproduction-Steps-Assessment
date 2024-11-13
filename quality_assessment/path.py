@@ -1,7 +1,7 @@
 from collections import deque
 
-class BFS:
-    def bfs(self, v, parent, graph):
+class Path:
+    def path(self, v, parent, graph):
         q = deque()
         q.append(v)
         node_visited = set()
@@ -81,7 +81,7 @@ class BFS:
             return path
         else:
             temp_parent = [-1] * len(transition_df)
-            self.bfs(start_next_state, temp_parent, graph)
+            self.path(start_next_state, temp_parent, graph)
             alternate_shortest_path = self.get_node_shortest_path_util(start_next_state, D, temp_parent, screen_Dict, transition_df)
             if len(alternate_shortest_path)>0:
                 path.append(S)
@@ -138,7 +138,7 @@ class BFS:
             return path
         else:
             temp_parent = [-1] * len(transition_df)
-            self.bfs(start_next_state, temp_parent, graph)
+            self.path(start_next_state, temp_parent, graph)
             alternate_shortest_path = self.get_shortest_path_util(start_next_state, D, temp_parent, screen_Dict, transition_df)
             if len(alternate_shortest_path)>0:
                 path.append(S_interacted)

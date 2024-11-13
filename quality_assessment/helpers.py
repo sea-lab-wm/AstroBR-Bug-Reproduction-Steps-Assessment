@@ -4,12 +4,12 @@ import os
 import itertools
 import json
 import re
-from bfs import BFS
+from path import Path
 import ast
 
 class Helpers:
 	def __init__(self):
-		self.bfs = BFS()
+		self.path = Path()
 
 	def get_actions_from_s2rs(self, filename, bug_id):
 		df = pd.read_csv(filename)
@@ -189,7 +189,7 @@ class Helpers:
 			start_index = Dict.get(start_list[i])
 			end_index = Dict.get(end_list[i])
 
-			self.bfs.addEdge(adjList, start_index, end_index)
+			self.path.addEdge(adjList, start_index, end_index)
 		
 		return Dict, adjList, index
 
@@ -923,10 +923,10 @@ class Helpers:
 		#print("ab: " + str(v) + " " + str(comp_infos[int(comp_id)-1][0]) + " " + str(ret_screen_seq_id) + " " + str(ret_interaction_id))
 		next_path = []
 		if ret_screen_seq_id==-1:
-			#next_path = self.bfs.get_shortest_path(v, comp_infos[int(comp_id)-1][0], v, comp_infos[int(comp_id)-1][0], parent, screen_Dict, df, graph)
+			#next_path = self.path.get_shortest_path(v, comp_infos[int(comp_id)-1][0], v, comp_infos[int(comp_id)-1][0], parent, screen_Dict, df, graph)
 			next_path =  [comp_infos[int(comp_id)-1][0]]
 		else: 
-			next_path = self.bfs.get_shortest_path(v, comp_infos[int(comp_id)-1][0], ret_screen_seq_id, ret_interaction_id, parent, screen_Dict, df, graph)
+			next_path = self.path.get_shortest_path(v, comp_infos[int(comp_id)-1][0], ret_screen_seq_id, ret_interaction_id, parent, screen_Dict, df, graph)
 			#next_path = next_path[:len(next_path)-1]
 		#print("cur: " + str(next_path))
 		next_path_sentences = self.get_individual_path_sentences(next_path, df, bug_id, graph_folder_path, screen_id)
@@ -937,12 +937,12 @@ class Helpers:
 		if ret_screen_seq_id==-1:
 			next_path =  [interaction_id]
 		else: 
-			next_path = self.bfs.get_shortest_path(v, interaction_id, ret_screen_seq_id, ret_interaction_id, parent, screen_Dict, df, graph)
+			next_path = self.path.get_shortest_path(v, interaction_id, ret_screen_seq_id, ret_interaction_id, parent, screen_Dict, df, graph)
 		next_path_sentences = self.get_individual_path_sentences(next_path, df)
 		return next_path, next_path_sentences
 	
 	def get_next_path_and_sentences_for_unmatched_node(self, v, ret_screen_seq_id, ret_interaction_id, transition_id, parent, screen_Dict, df, graph):
-		next_path = self.bfs.get_shortest_path(v, transition_id, ret_screen_seq_id, ret_interaction_id, parent, screen_Dict, df, graph)
+		next_path = self.path.get_shortest_path(v, transition_id, ret_screen_seq_id, ret_interaction_id, parent, screen_Dict, df, graph)
 		next_path_sentences = self.get_individual_path_sentences(next_path, df)
 		return next_path, next_path_sentences
 	
@@ -1047,7 +1047,7 @@ class Helpers:
 	def update_next_paths_for_not_matched_nodes(self, all_next_paths, all_next_path_sentences, u, v, transition_df, screen_Dict):
 		updated_all_next_paths = []
 		updated_all_next_path_sentences = []
-		cur_transition = self.bfs.get_transition(transition_df, u, v, screen_Dict)
+		cur_transition = self.path.get_transition(transition_df, u, v, screen_Dict)
 		interaction_info = self.get_interaction_values(transition_df, cur_transition)
 		cur_transition_sentence = self.get_interaction_info_sentence_from_interaction_id(interaction_info)
 
@@ -1077,7 +1077,7 @@ class Helpers:
 		matched_ids = self.get_matched_component_ids(comp_id_list, comp_infos)
 		path = []
 		for matched_id in matched_ids:
-			path.append(self.bfs.get_node_shortest_path(last_matched_info[0], last_matched_info[2], v, matched_id, parent, screen_Dict, df, graph))
+			path.append(self.path.get_node_shortest_path(last_matched_info[0], last_matched_info[2], v, matched_id, parent, screen_Dict, df, graph))
 
 		matched_sentences = self.get_matched_component_sentences(comp_id_list, comp_infos, bug_id, cur_screen_id, graph_folder_path)
 		#path_sentences = self.get_path_sentences(path, df)
@@ -1090,7 +1090,7 @@ class Helpers:
 		matched_ids = interaction_id_list
 		path = []
 		for matched_id in matched_ids:
-			path.append(self.bfs.get_node_shortest_path(last_matched_info[0], last_matched_info[2], v, matched_id, parent, screen_Dict, df, graph))
+			path.append(self.path.get_node_shortest_path(last_matched_info[0], last_matched_info[2], v, matched_id, parent, screen_Dict, df, graph))
 
 		#matched_sentences = self.get_matched_component_sentences(comp_id_list, comp_infos)
 		#path_sentences = self.get_path_sentences(path, df)
