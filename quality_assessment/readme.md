@@ -1,1 +1,1 @@
-This folder contains dataset for this paper.
+This folder contains quality assessment code for this paper.
