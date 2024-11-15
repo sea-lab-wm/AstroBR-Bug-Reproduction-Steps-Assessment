@@ -1,0 +1,280 @@
+FIlenames,Bug_id,S2Rs,Individual Step,Quality Labels,Interaction in Natural Language
+,49,,,,open app
+,49,,,,"type the ""price"" edit text"
+,49,,,,type gallons
+,49,,,,type odometer
+,49,,,,Click save fillup
+,49,,,,Click Fillup
+android-mileage#3.0.8_49.xml,49,1.3: 1. Enter incorrect price per km in a fillup (I entered 102.9 rather than 1.029),Enter incorrect price per km in a fillup (I entered 102.9 rather than 1.029),"EM, MS","type the ""price"" edit text"
+,49,,,,type gallons
+,49,,,,type odometer
+,49,,,,Click save fillup
+,49,,,,Click tab on the top
+android-mileage#3.0.8_49.xml,49,1.4: 2. switch to statistics view and see calculations,switch to statistics view and see calculations,"EM, MS",Click Statistics
+android-mileage#3.0.8_49.xml,49,1.5: 3. Find the incorrect entry in history and fix the price.,Find the incorrect entry in history,EM,Click History
+,49,,,,Tap on the bottom fillup button
+,49,,fix the price,"EM, MS",Type 1.029
+,49,,,,Click Save Changes
+,49,,,,Click Statistics
+,,,,,
+,53,,,,open app
+android-mileage#3.1.1_53.xml,53,"1.3: 1. enter few fillups, each mark as partial","enter few fillups, each mark as partial","AS, MS","type the ""price"" edit text"
+,53,,,,type gallons
+,53,,,,type odometer
+,53,,,,Click Save Fillup
+,53,,,,Click Fillup
+,53,,,,"type the ""price"" edit text"
+,53,,,,type gallons
+,53,,,,type odometer
+,53,,,,Click Save Fillup
+android-mileage#3.1.1_53.xml,53,1.4: 2. go to stats,go to stats,"EM, MS",Click Statistics
+,,,,,
+,64,,,,open app
+android-mileage#3.1.1_64.xml,64,1.3: 1. Entered all the fillup data and goto History Tab,Entered all the fillup data,"AS, MS","type the ""price"" edit text"
+,64,,,,type gallons
+,64,,,,type odometer
+,64,,,,Click Save Fillup
+,64,,,,Click Fillup
+,64,,goto History Tab,"EM, MS","click the ""history"" text view"
+android-mileage#3.1.1_64.xml,64,1.4: 2. Click on one of the Fillup history,Click on one of the Fillup history,EM,click one fillup history
+,,,,,
+android-mileage#3.1.1_65.xml,65,1.3: 1. Open Mileage Tracker,Open Mileage Tracker,EM,open app
+,65,,,,"click the ""menu"" image view"
+android-mileage#3.1.1_65.xml,65,"1.4: 2. Negotiate to the ""Service Intervals"" screen","Negotiate to the ""Service Intervals"" screen","EM, MS","click the ""service intervals"" text view"
+android-mileage#3.1.1_65.xml,65,"1.5: 3. ""Add Service Interval""",Add Service Interval,EM,"click the ""add service interval"" button"
+,65,,,,"click the ""oil change"""
+android-mileage#3.1.1_65.xml,65,"3.4: To begin, I entered the information for my next oil change.",I entered the information for my next oil change.,AS,"enter a value in the ""odometer"" textview"
+,65,,,,"click the ""add service interval"" button"
+,65,,,,"click the ""menu"" button"
+android-mileage#3.1.1_65.xml,65,3.6: Then I added a second service... my yearly State Inspection.,Then I added a second service... my yearly State Inspection.,"AS, MS","click the ""add service interval"" button"
+android-mileage#3.1.1_65.xml,65,"3.7: But, when I entered the second one, it erased the first one.",,,"click the ""oil change"""
+,65,,,,"enter a value in the ""odometer"" textview"
+,65,,,,"click the ""add service interval"" button"
+,,,,,
+,10,0: Force Close if press Back in Preferences screen,,,open app
+,10,,,,click Ok button
+,10,,,,click menu
+,10,,,,"click the ""more"" text view"
+ATimeTracker#0.15_10.xml,10,"1.1: If I press the Back button while viewing the Preferences, the app will Force Quit.",viewing the Preferences,"EM, MS","click the ""preferences"" text view"
+ATimeTracker#0.15_10.xml,10,,press the Back button,EM,"click the ""back"" image view"
+,,,,,
+ATimeTracker#0.17_25.xml,251,1.1: Open Time Tracker,Open Time Tracker,EM,open app
+,251,,,,Click Ok
+ATimeTracker#0.17_25.xml,251,1.2: Tap Menu,Tap Menu,"EM, MS",Click menu
+ATimeTracker#0.17_25.xml,251,"1.3: Tap more option select any option that results in ""Success"" dialog",Tap more option,EM,"click the ""more"" text view"
+,251,"1.4: For example: Select ""Export view to csv"" success dialog is shown with text ""Successfully exported csv to memory card as timetracker.db""","select any option that results in ""Success"" dialog. For example: Select ""Export view to csv"" success dialog is shown with text ""Successfully exported csv to memory card as timetracker.db""",EM,"Click ""Export view to csv"""
+ATimeTracker#0.17_25.xml,251,1.5: Tap ok to close success dialog,Tap ok to close success dialog,EM,Click Ok
+ATimeTracker#0.17_25.xml,251,1.6: Now change device orientation as landscape,Now change device orientation as landscape,,
+,251,,,,Click menu
+,251,,,,"click the ""more"" text view"
+ATimeTracker#0.17_25.xml,251,"1.7: Now again Select ""Export view to csv""","Now again Select ""Export view to csv""","EM, MS","Click ""Export view to csv"""
+,251,,,,Click Ok
+,,,,,
+,35,,,,open app
+,35,,,,"click the ""ok"" button"
+ATimeTracker#0.20_35.xml,35,,selecting the menu item,"EM, MS",click menu
+,35,,,,"click the ""more"" text view"
+ATimeTracker#0.20_35.xml,35,"1.1: when trying to restore a backup, the app crashes with ""Unfortunately, A Time Tracker has stopped."" this happens directly after selecting the menu item.",Trying to restore a backup,"EM, MS","click the ""restore from backup"" text view"
+,,,,,
+,46,,,,open app
+ATimeTracker#0.20_46.xml,46,1.2: 1. Click on OK,Click on OK,"EM, MS","click the ""ok"" button"
+ATimeTracker#0.20_46.xml,46,"1.3: 2. Click on ""..."" (More Options...)","1.3: 2. Click on ""..."" (More Options...)",EM,click on More Options
+ATimeTracker#0.20_46.xml,46,1.4: 3. Click on Add Task,Click on Add Task,EM,"click the ""add task"" text view"
+,46,,,,Click taskname
+ATimeTracker#0.20_46.xml,46,"1.5: 4. Insert text ""testtask""","Insert text ""testtask""","EM, MS",Type testtask in task name
+ATimeTracker#0.20_46.xml,46,1.6: 5. Click on Add Task,Click on Add Task,EM,"click the ""add task"" button"
+ATimeTracker#0.20_46.xml,46,1.7: 6. Long Click on Element in List,Long Click on Element in List,EM,"long click the ""task"""
+ATimeTracker#0.20_46.xml,46,1.8: 7. Click on Edit Task,Click on Edit Task,EM,"click the ""edit task"" text view"
+ATimeTracker#0.20_46.xml,46,1.9: 8. Orientation Change,Orientation Change,,
+,,,,,
+,12,,,,open app
+droidweight#1.3.3_12.xml,12,1.1: ``` select Menu > Preferences > Units > Imperial,select Menu,"EM, MS","click the ""menu"" image view"
+,12,,Preferences,EM,"click the ""preferences"" text view"
+,12,,Units,EM,"click the ""Unit"" button"
+,12,,Imperial,EM,"click the ""imperial (pd"" checked text view"
+,,,,,
+,252,,,,open app
+,252,,,,Click on weight
+,252,,,,Click weight
+,252,,,,Type 120 on weight
+,252,,,,Click Go
+,252,,,,"click the ""menu"" image view"
+droidweight#1.5.4_25.xml,252,1.3: 1. Export of data,Export of data,"EM, MS","click the ""export data"" text view"
+droidweight#1.5.4_25.xml,252,1.4: 2. open in Excel,open in Excel,VM,
+,,,,,
+,471,,,,open app
+,471,,,,"click the ""next"" button"
+,471,,,,"click the ""next"" button"
+,471,,,,"click the ""next"" button"
+,471,,,,"click the ""disable crash reports"""
+,471,,,,"click the ""next"" button"
+,471,,,,"click the ""done"" button"
+,471,,,,"click the ""allow"" button"
+,471,,,,click Income
+gnucash-android#2.0.4_471.xml,471,1.1: In the account there is a small + to add a new record.,In the account there is a small + to add a new record.,"EM, MS","click the ""create transaction"" image view"
+gnucash-android#2.0.4_471.xml,471,"1.2: After press this one time, doesn't mater if you safe the record or cancel it, this symbol is gone.",safe the record or cancel it,EM,"click the ""navigate up"" image button"
+gnucash-android#2.0.4_471.xml,471,"1.3: It show up again, when you leave the account and open it again.",leave the account,EM,"click the ""navigation drawer opened"" image button"
+,471,,,,"click the ""reports"" text view"
+,471,,,,click back
+,471,,open it again,"EM, MS","click ""Income"""
+,,,,,
+,615,,,,open app
+,615,,,,"click the ""next"" button"
+,615,,,,"click the ""next"" button"
+,615,,,,"click the ""next"" button"
+,615,,,,"click the ""Automatically send crash reports"""
+,615,,,,"click the ""next"" button"
+,615,,,,"click the ""done"" button"
+,615,,,,"click the ""allow"" button"
+,615,,,,"click the ""navigation drawer opened"" image button"
+,615,,,,click action bar$tab
+,615,,,,"click the ""manage books"" text view"
+gnucash-android#2.1.1_615.xml,615,1.2: 1. Create a new book.,Create a new book,"EM, MS","click the ""menu create book"" text view"
+,615,,,,"click the ""navigation drawer opened"" image button"
+,615,,,,click action bar$tab
+gnucash-android#2.1.1_615.xml,615,1.3: 2. Manage books...,Manage books...,"EM, MS","click the ""manage books"" text view"
+,,,,,
+,616,,,,open app
+,616,,,,"click the ""next"" button"
+,616,,,,"click the ""next"" button"
+,616,,,,"click the ""next"" button"
+,616,,,,"click the ""disable crash reports"""
+,616,,,,"click the ""next"" button"
+,616,,,,"click the ""done"" button"
+,616,,,,"click the ""allow"" button"
+,616,,,,click relative layout
+,616,,,,click relative layout
+,616,,,,"click the ""navigation drawer opened"" image button"
+gnucash-android#2.1.3_616.xml,616,"2.2: 1. Select ""Export..."" from left tray","Select ""Export..."" from left tray","EM, MS","click the ""export"" checked text view"
+,616,,,,"click the ""sd card"" text view"
+gnucash-android#2.1.3_616.xml,616,"2.3: 2. Select export to ""Google Drive"", format QIF, default value for ""Since""","Select export to ""Google Drive""","EM, MS","click the ""google drive"" checked text view"
+,616,,,,"click the ""back modal"" key button view"
+,616,,format QIF,"EM, MS","click the ""qif"" radio button"
+,616,,"default value for ""Since""",EM,"click the ""export"" start date"
+,616,,,,"Click the ""Ok"" button"
+gnucash-android#2.1.3_616.xml,616,"2.4: 3. Check ""Delete transactions after export""","Check ""Delete transactions after export""","EM, MS","click the ""delete transactions after export"" check box"
+gnucash-android#2.1.3_616.xml,616,"2.5: 4. Tap ""EXPORT""","Tap ""EXPORT""",EM,"click the ""export"" text view"
+,,,,,
+,618,,,,open app
+,618,,,,"click the ""next"" button"
+,618,,,,"click the ""next"" button"
+,618,,,,"click the ""next"" button"
+,618,,,,"click the ""disable crash reports"""
+,618,,,,"click the ""next"" button"
+,618,,,,"click the ""done"" button"
+,618,,,,"click the ""allow"" button"
+,618,,,,click relative layout
+,618,,,,click relative layout
+gnucash-android#2.1.3_618.xml,618,1.2: Export with:,,,"click the ""navigation drawer opened"" image button"
+gnucash-android#2.1.3_618.xml,618,1.3: - format: QIF or OFX,Export with format: QIF or OFX,"EM, MS","click the ""export"" checked text view"
+,618,,,,"click the ""sd card"" text view"
+gnucash-android#2.1.3_618.xml,618,"1.4: - target: DropBox, Google Drive or ownCloud","target: DropBox, Google Drive or ownCloud","EM, MS","click the ""own cloud"" checked text view"
+,618,,,,"click the ""cancel"" button"
+gnucash-android#2.1.3_618.xml,618,1.5: - check Delete transactions after export option,check Delete transactions after export option,"EM, MS","click the ""delete transactions after export"" check box"
+,,,,,
+,620,,,,open app
+,620,,,,"click the ""next"" button"
+,620,,,,"click the ""next"" button"
+,620,,,,"click the ""next"" button"
+,620,,,,"click the ""disable crash reports"""
+,620,,,,"click the ""next"" button"
+,620,,,,"click the ""done"" button"
+,620,,,,"click the ""allow"" button"
+,620,,,,"click the ""options menu"" image view"
+gnucash-android#2.1.3_620.xml,620,1.3: 2. Edit the account.,Edit the account,"EM, MS","click the ""edit account"" text view"
+,620,,,,"click the ""input color picker"" quick contact badge"
+gnucash-android#2.1.3_620.xml,620,1.2: 1. Set the color of an account,Set the color of an account,"EM, MS","click the ""color picker swatch"" image view"
+gnucash-android#2.1.3_620.xml,620,1.4: 3. Press save,Press save,EM,"click the ""save"" text view"
+,,,,,
+,633,,,,open app
+,633,,,,"click the ""next"" button"
+,633,,,,"click the ""next"" button"
+,633,,,,"click the ""next"" button"
+,633,,,,"click the ""disable crash reports"""
+,633,,,,"click the ""next"" button"
+,633,,,,"click the ""done"" button"
+,633,,,,"click the ""allow"" button"
+,633,,,,"click the ""navigation drawer opened"" image button"
+,633,,,,"click the ""reports"" checked text view"
+gnucash-android#2.1.3_633.xml,633,"1.2: 1. Open one of the reports (pie chart, line chart, bar chart or sheet).",Open one of the reports,"EM, MS","click the ""pie chart"" button"
+,633,,,,"click the ""pie chart"" view group"
+gnucash-android#2.1.3_633.xml,633,1.3: 2. Turn the phone to change the screen orientation.,Turn the phone to change the screen orientation,,
+,,,,,
+,663,,,,open app
+,663,,,,"click the ""next"" button"
+,663,,,,"click the ""next"" button"
+,663,,,,"click the ""next"" button"
+,663,,,,"click the ""disable crash reports"""
+,663,,,,"click the ""next"" button"
+,663,,,,"click the ""done"" button"
+,663,,,,"click the ""allow"" button"
+gnucash-android#2.1.3_663.xml,663,1.2: 1. Create an account with BYN currency.,Create an account with BYN currency,"AS, MS","click the ""fab create account"" image button"
+,663,,,,type account name
+,663,,,,Click Currency spinner
+,663,,,,Swipe Up
+,663,,,,Swipe Up
+,663,,,,Click BYN Currency
+gnucash-android#2.1.3_663.xml,663,1.3: 2. Hit Save.,Hit Save,EM,"click the ""save"" text view"
+,,,,,
+,699,,,,open app
+,699,,,,"click the ""next"" button"
+,699,,,,"click the ""next"" button"
+,699,,,,"click the ""next"" button"
+,699,,,,"click the ""disable crash reports"""
+,699,,,,"click the ""next"" button"
+,699,,,,"click the ""done"" button"
+,699,,,,"click the ""dismiss"" button"
+,699,,,,click an account
+,699,,,,click the current assets
+,699,,,,"click the ""create transaction"" image view"
+,699,,,,type transaction name
+,699,,,,type transaction amount
+,699,,,,Click Save
+,699,,,,Click a sub-account
+gnucash-android#2.2.0_699.xml,699,1.2: 1. Click on existing transaction,Click on existing transaction,"EM, MS",click a transaction
+gnucash-android#2.2.0_699.xml,699,1.3: 1. Click on edit transaction FAB,Click on edit transaction FAB,EM,"click the ""fab edit transaction"" image button"
+gnucash-android#2.2.0_699.xml,699,Click on splits icon,Click on splits icon,EM,"click the ""btn split editor"" image view"
+gnucash-android#2.2.0_699.xml,699,1.5: 1. Add a split,Add a split,AS,"click the ""menu add split"" text view"
+,699,,,,type split amount
+gnucash-android#2.2.0_699.xml,699,"1.6: 1. Click ""save""","Click ""save""",EM,"click the ""save"" text view"
+gnucash-android#2.2.0_699.xml,699,"1.7: 1. Click ""save"" again","Click ""save"" again",EM,"click the ""save"" text view"
+,,,,,
+,701,,,,open app
+,701,,,,"click the ""next"" button"
+,701,,,,"click the ""next"" button"
+,701,,,,"click the ""next"" button"
+,701,,,,"click the ""disable crash reports"""
+,701,,,,"click the ""next"" button"
+,701,,,,"click the ""done"" button"
+,701,,,,"click the ""dismiss"" button"
+,701,,,,click an account
+,701,,,,click the current assets
+,701,,,,"click the ""create transaction"" image view"
+,701,,,,type transaction name
+,701,,,,type transaction amount
+,701,,,,Click Save
+,701,,,,Click a sub-account
+gnucash-android#2.2.0_701.xml,701,1.2: 1. Click on transaction,Click on transaction,"EM, MS",click a transaction
+gnucash-android#2.2.0_701.xml,701,1.3: 1. Click on edit FAB button,Click on edit FAB button,EM,"click the ""fab edit transaction"" image button"
+gnucash-android#2.2.0_701.xml,701,1.4: 1. Click on split icon,Click on split icon,EM,"click the ""btn split editor"" image view"
+gnucash-android#2.2.0_701.xml,701,1.5: 1. Add memo to 1 or more splits,Add memo to 1 or more splits,AS,"type the ""input split memo"" edit text"
+,701,,,,"type ""test1"" in memo"
+,701,,,,"type ""test2"" in memo"
+gnucash-android#2.2.0_701.xml,701,"1.6: 1. Click ""save""","Click ""save""",EM,"click the ""save"" text view"
+gnucash-android#2.2.0_701.xml,701,"1.7: 1. Click ""save"" again","Click ""save"" again",EM,"click the ""save"" text view"
+gnucash-android#2.2.0_701.xml,701,1.8: 1. Click on edit FAB button,Click on edit FAB button,EM,"click the ""fab edit transaction"" image button"
+gnucash-android#2.2.0_701.xml,701,1.9: 1. Click on split icon,Click on split icon,EM,"click the ""btn split editor"" image view"
+,,,,,
+,154,,,,open app
+,154,,,,click linear layout
+schedule-campfahrplan#1.32.2_154.xml,154,1.4: 1. Add some favorites,Add some favorites,"EM, MS","click the ""item fav"" text view"
+,154,,,,"click the ""back"" image button"
+schedule-campfahrplan#1.32.2_154.xml,154,1.5: 2. Go into favorites,Go into favorites,"EM, MS",click on the favorites button
+schedule-campfahrplan#1.32.2_154.xml,154,1.6: 3. Select an event,Select an event,EM,click an event
+schedule-campfahrplan#1.32.2_154.xml,154,1.7: 4. In the event details screen: Remove the event from the favorites,In the event details screen: Remove the event from the favorites,EM,Click favorites button
+schedule-campfahrplan#1.32.2_154.xml,154,1.8: 5. Hit BACK button to return to favorites,Hit BACK button to return to favorites,EM,"click the ""back"" image view"
+,,,,,
+,169,,,,open app
+,169,,,,"click the ""ok"" button"
+schedule-campfahrplan#1.32.2_169.xml,169,3.1: 1. Long Click on item in list,Long Click on item in list,"EM, MS","Long Tap on the ""Chaos Communication Opening"" item"
+schedule-campfahrplan#1.32.2_169.xml,169,3.2: 2. Orientation change,Orientation change,,
