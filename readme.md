@@ -5,7 +5,7 @@ This package contains the following files/folders:
     * `bug_reports`: this folder contains the bug reports used in the study. The bug reports are divided into two sets: development and test sets. The development set contains 54 bug reports, while the test set contains 21 bug reports.
     * `execution_model_test_set`: this folder contains the application execution models for the 21 bug reports in the test set.
     * `execution_model_development_set`: this folder contains the application execution models for the 10 bug reports in the development set.
-    * `QAs`: this folder contains quality annotation results
+    * `QAs`: this folder contains quality annotation data
 2. `b_s2r_sentence_identification`: a folder containing the necessary scripts to run the S2R sentence identification phase of AstroBR. This folder has the following sub-folders:
     * `generate_prompts`: this folder contains the necessary scripts to generate prompts for the S2R sentence identification task.
     * `generate_responses`: this folder contains the necessary scripts to generate GPT-4 responses for the S2R sentence identification task.
